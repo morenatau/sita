@@ -1,0 +1,113 @@
+  /* ===== TENDER / INVITATIONS PAGE ===== */
+  .tender-page-section { padding: 20px 40px 40px; }
+  .tender-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+    font-size: 13px;
+  }
+  .tender-table th {
+    background: #4fa8de;
+    color: #fff;
+    text-align: left;
+    padding: 10px 16px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .tender-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    font-size: 13px;
+    line-height: 1.45;
+    vertical-align: top;
+    word-wrap: break-word;
+  }
+  .tender-table tbody tr:nth-child(even) { background: #f5f5f5; }
+  .tender-listing-table .pub-date { font-weight: 700; color: #1a2c42; }
+  .tender-notice { margin-bottom: 6px; }
+  .tender-notice h3 { font-size: 15px; color: #1a2c42; margin: 0 0 8px; }
+  .tender-notice ul { margin: 0 0 10px 20px; color: #333; font-size: 13px; line-height: 1.5; }
+  .tender-notice p { color: #333; font-size: 13px; margin: 0 0 6px; }
+  .dl-btn {
+    display: inline-block;
+    border: 1px solid #4fa8de;
+    color: #4fa8de;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s ease, color 0.2s ease;
+    background: #fff;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .dl-btn:hover { background: #4fa8de; color: #fff; }
+  .dl-cell { position: static; vertical-align: top; }
+  .dl-wrap { position: relative; display: inline-block; }
+  .dl-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 60;
+    min-width: 230px;
+  }
+  .dl-menu.open { display: block; }
+  .dl-menu a {
+    display: block;
+    padding: 9px 14px;
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .dl-menu a:last-child { border-bottom: none; }
+  .dl-menu a:hover { background: #f2f8fc; color: #4fa8de; }
+  .dl-menu a.dl-all {
+    font-weight: 700;
+    color: #1a2c42;
+    background: #f7f9fb;
+    border-bottom: 2px solid #4fa8de;
+  }
+  .dl-menu a.dl-all:hover { background: #eaf3fb; }
+  
+  /* ===== DATABASE CTA ===== */
+  .database-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    background: #f2f8fc;
+    border: 1px solid #d7e9f5;
+    border-left: 4px solid #4fa8de;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 0 0 18px;
+  }
+  .database-cta-text h3 { font-size: 15px; color: #1a2c42; margin: 0 0 4px; }
+  .database-cta-text p { font-size: 13px; color: #333; margin: 0; }
+  .database-cta-btn {
+    display: inline-block;
+    background: #4fa8de;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+  }
+  .database-cta-btn:hover { background: #3a8fc4; color: #fff; }
+  @media (max-width: 600px) {
+    .database-cta { flex-direction: column; align-items: flex-start; }
+    .database-cta-btn { width: 100%; text-align: center; }
+  }

@@ -1,0 +1,28 @@
+  /* ===== FOOTER ===== */
+  footer { background: #1e2b3d; color: #fff; padding: 50px 60px 0; }
+  .footer-grid {
+    display: flex;
+    gap: 60px;
+  }
+  .footer-col h4 { font-size: 20px; font-weight: 400; margin-bottom: 20px; }
+  .footer-col a { display: block; padding: 10px 0; border-bottom: 1px solid #33445a; font-size: 15px; color: #dfe6ee; width: 220px; }
+  .map-box {
+    width: 340px; height: 180px;
+    background: repeating-linear-gradient(45deg,#cfd8df,#cfd8df 10px,#c3ccd3 10px,#c3ccd3 20px);
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .map-pin { position: absolute; left: 40%; top: 55%; font-size: 22px; color: #cf4a3d; }
+  .contact-row { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; color: #cfd8df; }
+  .contact-row .cb { width: 36px; height: 36px; border-radius: 50%; background: #2b6fc9; display: flex; align-items:center; justify-content:center; font-size: 16px; }
+  .covid-badge { background: #fff; color: #333; font-size: 11px; padding: 8px; width: 220px; margin-top: 10px; }
+  .footer-bottom {
+    margin-top: 40px;
+    background: #2b6fc9;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+  }
+  .back-top { width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,0.25); display:flex; align-items:center; justify-content:center; }

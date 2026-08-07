@@ -1,0 +1,106 @@
+  /* ===== MAP ===== */
+  .map-wrap { padding: 25px 40px 0; }
+  .map-frame {
+    width: 100%;
+    height: 430px;
+    border: 0;
+    display: block;
+  }
+
+  /* ===== CONTACT COLUMNS ===== */
+  .contact-cols {
+    display: flex;
+    gap: 60px;
+    padding: 50px 40px 30px;
+  }
+  .contact-col { flex: 1; }
+  .contact-col h3 { color: #6fbf3f; font-weight: 500; font-size: 22px; margin: 0 0 20px; }
+  .contact-col .row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    color: #222;
+  }
+  .contact-col .row .ic { color: #4fa8de; font-size: 18px; width: 20px; text-align: center; }
+  .contact-col p.plain { font-size: 18px; margin: 0 0 14px; color: #222; }
+  .offices-heading {
+    color: #6fbf3f;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  /* ===== PROVINCE TABS ===== */
+  .tabs-bar {
+    display: flex;
+    border-top: 2px solid #1a2c42;
+    margin: 20px 40px 0;
+  }
+  .tab-btn {
+    flex: 1;
+    text-align: center;
+    padding: 22px 10px;
+    font-size: 18px;
+    color: #888;
+    border-right: 1px solid #eee;
+    cursor: pointer;
+    background: #fff;
+  }
+  .tab-btn:last-child { border-right: none; }
+  .tab-btn.active {
+    color: #1a2c42;
+    font-weight: 700;
+    border-top: 3px solid #4fa8de;
+    margin-top: -2px;
+    padding-top: 21px;
+  }
+  .tab-panels { margin: 0 40px 60px; }
+  .tab-panel { display: none; padding-top: 25px; }
+  .tab-panel.active { display: block; }
+  .office-block {
+    border-left: 4px solid #1a2c42;
+    padding: 8px 0 20px 20px;
+    margin-bottom: 10px;
+  }
+  .office-block h4 { color: #6fbf3f; font-weight: 500; font-size: 20px; margin: 0 0 10px; }
+  .office-block .row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #222;
+  }
+  .office-block .row .ic { color: #4fa8de; font-size: 16px; width: 18px; text-align: center; }
+
+  /* ===== OFFICE TABLE (contact/physical/postal columns) ===== */
+  .office-table { width: 100%; border-collapse: collapse; }
+  .office-table thead th {
+    background: #ece7d9;
+    color: #2f5a8a;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+  .office-table thead th:first-child { text-align: left; }
+  .office-table tbody td {
+    vertical-align: top;
+    padding: 14px 20px 20px;
+    font-size: 15px;
+    color: #2f5a8a;
+    line-height: 1.6;
+    border-bottom: 1px solid #eee;
+  }
+  .office-table .office-name {
+    font-weight: 700;
+    color: #2f5a8a;
+    padding-top: 18px;
+  }
+  .office-table .label { font-weight: 700; }
+
+
+  .page { display: none; }
+  .page.active { display: block; }

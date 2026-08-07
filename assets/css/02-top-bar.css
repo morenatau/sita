@@ -1,0 +1,36 @@
+  /* ===== TOP UTILITY BAR ===== */
+  .top-strip {
+    display: flex;
+    align-items: stretch;
+    height: 42px;
+    font-size: 13px;
+  }
+  .top-strip .green { background: #6fbf3f; width: 220px; flex-shrink: 0; }
+  .top-strip .blue-main {
+    background: #1e4d8b;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #fff;
+  }
+  .top-strip .blue-main .links a { margin-right: 18px; font-weight: bold; }
+  .top-strip .blue-main .contact span { margin-right: 25px; }
+  .top-strip .icons { display: flex; align-items: center; gap: 8px; margin-left: 15px; }
+  .top-strip .icons .circle {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: transparent;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    overflow: hidden;
+  }
+  .top-strip .icons .circle img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .top-strip .search-circle {
+    width: 30px; height: 30px; border-radius: 50%;
+    background: #2b6fc9; display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 14px;
+  }
+  .top-strip .green-right { background: #6fbf3f; width: 220px; flex-shrink: 0; }

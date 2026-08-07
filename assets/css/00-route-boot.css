@@ -1,0 +1,9 @@
+/* Before the rest of the CSS/JS loads: force only the page matching the
+     detected route to be visible, overriding the hardcoded "active" class
+     on the home page in the static markup. */
+  html[data-route] .page.active { display: none; }
+  html[data-route="home"] #page-home,
+  html[data-route="contact"] #page-contact,
+  html[data-route="invitations"] #page-invitations {
+    display: block !important;
+  }
