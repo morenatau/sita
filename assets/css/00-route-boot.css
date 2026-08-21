@@ -4,6 +4,8 @@
   html[data-route] .page.active { display: none; }
   html[data-route="home"] #page-home,
   html[data-route="contact"] #page-contact,
-  html[data-route="invitations"] #page-invitations {
+  html[data-route="invitations"] #page-invitations,
+  html[data-route="submit"] #page-submit,
+  html[data-route="admin"] #page-admin {
     display: block !important;
   }

@@ -1,13 +1,17 @@
 var PAGE_PATHS = {
     'home': '/',
     'contact': '/contact',
-    'invitations': '/tenders/invitations'
+    'invitations': '/tenders/invitations',
+    'submit': '/tenders/submit',
+    'admin': '/admin'
   };
   var PATH_PAGES = {
     '': 'home',
     '/': 'home',
     '/contact': 'contact',
-    '/tenders/invitations': 'invitations'
+    '/tenders/invitations': 'invitations',
+    '/tenders/submit': 'submit',
+    '/admin': 'admin'
   };
 
   function normalizePath(p) {

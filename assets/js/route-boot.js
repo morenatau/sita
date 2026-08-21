@@ -11,7 +11,9 @@
       '': 'home',
       '/': 'home',
       '/contact': 'contact',
-      '/tenders/invitations': 'invitations'
+      '/tenders/invitations': 'invitations',
+      '/tenders/submit': 'submit',
+      '/admin': 'admin'
     };
     var route = PATH_PAGES[normalizePath(window.location.pathname)] || 'home';
     document.documentElement.setAttribute('data-route', route);

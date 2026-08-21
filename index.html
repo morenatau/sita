@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="/assets/css/08-tenders.css">
 <link rel="stylesheet" href="/assets/css/09-contact.css">
 <link rel="stylesheet" href="/assets/css/10-responsive.css">
+<link rel="stylesheet" href="/assets/css/11-admin.css">
 </head>
 <body>
 
@@ -424,6 +425,14 @@
 
   <div class="tender-page-section">
 
+    <div class="submit-cta-banner">
+      <div class="submit-cta-banner-text">
+        <h2>Ready to Submit Your Bid?</h2>
+        <p>Skip the paperwork &ndash; upload your tender documents securely through our e-Portal in minutes.</p>
+      </div>
+      <a href="#" class="submit-cta-banner-btn" onclick="showPage('submit'); return false;">Go to e-Portal Submissions &rarr;</a>
+    </div>
+
     <table class="tender-table">
       <thead>
         <tr><th>Division</th><th>Contact Person</th><th>Tel No.</th><th>Fax No.</th><th>E-mail Address</th></tr>
@@ -617,11 +626,176 @@
   </div>
 </div>
 
+<div id="page-submit" class="page">
+
+  <div class="page-header">
+    <h1>e-Portal Submissions</h1>
+    <div class="breadcrumb">
+      <span class="home">Home</span>
+      <span class="sep">&#187;</span>
+      <span class="mid">Procurement</span>
+      <span class="sep">&#187;</span>
+      <span class="mid">Tenders</span>
+      <span class="sep">&#187;</span>
+      <span class="current">Submissions</span>
+    </div>
+  </div>
+
+  <div class="submit-form-wrap">
+    <div class="submit-form-card">
+      <div class="submit-form-header">
+        <h2>1. Submission Information &amp; Documents</h2>
+        <span class="submit-ssl-badge">Secure SSL Encrypted</span>
+      </div>
+      <div class="submit-form-body">
+
+        <div class="submit-field">
+          <label for="submitTender">Select Target Tender / RFQ Opportunity<span class="req">*</span></label>
+          <select id="submitTender" required>
+            <option value="">-- Choose Active Opportunity --</option>
+          </select>
+        </div>
+
+        <div class="submit-field-row">
+          <div class="submit-field">
+            <label for="submitCompany">Company Registered Name<span class="req">*</span></label>
+            <input type="text" id="submitCompany" placeholder="e.g. Apex Logistics (Pty) Ltd" required>
+          </div>
+          <div class="submit-field">
+            <label for="submitCipc">CIPC / Tax Registration No.<span class="req">*</span></label>
+            <input type="text" id="submitCipc" placeholder="e.g. 2021/489102/07" required>
+          </div>
+        </div>
+
+        <div class="submit-field-row">
+          <div class="submit-field">
+            <label for="submitContact">Authorized Contact Representative<span class="req">*</span></label>
+            <input type="text" id="submitContact" placeholder="e.g. John Khumalo" required>
+          </div>
+          <div class="submit-field">
+            <label for="submitEmail">Official Contact Email<span class="req">*</span></label>
+            <input type="email" id="submitEmail" placeholder="procurement@company.co.za" required>
+          </div>
+        </div>
+
+        <div class="submit-field">
+          <label for="submitCategory">Document Category<span class="req">*</span></label>
+          <select id="submitCategory" required>
+            <option value="Company Registration Documents">Company Registration Documents (CIPC / Tax / BEE)</option>
+            <option value="Technical Proposal &amp; Specification" selected>Technical Proposal &amp; Specification</option>
+            <option value="Pricing Schedule">Pricing Schedule</option>
+            <option value="SBD Forms">SBD Forms (SBD1 / SBD4 / SBD6 / SBD8 / SBD9)</option>
+            <option value="Other Supporting Documents">Other Supporting Documents</option>
+          </select>
+        </div>
+
+        <div class="submit-field">
+          <label>Select &amp; Upload Document File(s)<span class="req">*</span></label>
+          <div class="submit-dropzone" id="submitDropzone">
+            <div class="submit-dropzone-icon">&#128193;</div>
+            <h4>Drag and drop your file(s) here, or click to browse</h4>
+            <p class="submit-dropzone-hint">Supported formats: PDF, DOCX, ZIP, PNG, JPG (Maximum size: 50 MB per file) &bull; Multiple files allowed</p>
+            <button type="button" class="submit-dropzone-btn" id="submitBrowseBtn">Select File(s) from Computer</button>
+            <input type="file" id="submitFileInput" multiple accept=".pdf,.docx,.doc,.zip,.png,.jpg,.jpeg" style="display:none;">
+          </div>
+          <div class="submit-file-list" id="submitFileList"></div>
+        </div>
+
+      </div>
+      <div class="submit-form-footer">
+        <button type="button" class="submit-submit-btn" id="submitBtn">Submit Bid Documents</button>
+        <div class="submit-status-msg" id="submitStatus"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="page-admin" class="page">
+
+  <div class="page-header">
+    <h1>Admin</h1>
+    <div class="breadcrumb">
+      <span class="home">Home</span>
+      <span class="sep">&#187;</span>
+      <span class="current">Admin</span>
+    </div>
+  </div>
+
+  <div id="adminLoginWrap" class="admin-login-wrap">
+    <div class="admin-login-card">
+      <h2>Admin Sign In</h2>
+      <p class="admin-login-hint">Sign in to review submitted tender documents.</p>
+      <div class="submit-field">
+        <label for="adminEmail">Email</label>
+        <input type="email" id="adminEmail" placeholder="admin@sita-ct.co.za" autocomplete="username">
+      </div>
+      <div class="submit-field">
+        <label for="adminPassword">Password</label>
+        <input type="password" id="adminPassword" placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <button type="button" class="submit-submit-btn" id="adminLoginBtn">Sign In</button>
+      <div class="submit-status-msg" id="adminLoginStatus"></div>
+    </div>
+  </div>
+
+  <div id="adminDashboard" class="admin-dashboard" style="display:none;">
+    <div class="admin-dashboard-toolbar">
+      <h2>Submissions</h2>
+      <div class="admin-toolbar-right">
+        <span id="adminSubCount" class="admin-sub-count">0 submissions</span>
+        <select id="adminStatusFilter">
+          <option value="">All statuses</option>
+          <option value="Received">Received</option>
+          <option value="Under Review">Under Review</option>
+          <option value="Shortlisted">Shortlisted</option>
+          <option value="Rejected">Rejected</option>
+          <option value="Awarded">Awarded</option>
+        </select>
+        <button type="button" class="admin-btn-secondary" id="adminRefreshBtn">Refresh</button>
+        <button type="button" class="admin-btn-secondary" id="adminLogoutBtn">Log Out</button>
+      </div>
+    </div>
+
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Reference</th>
+            <th>Tender / RFQ</th>
+            <th>Company</th>
+            <th>Category</th>
+            <th>Contact</th>
+            <th>Files</th>
+            <th>Status</th>
+            <th>Submitted</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="adminSubmissionsBody">
+          <tr><td colspan="9" class="admin-empty">Loading&hellip;</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
 <script src="/assets/js/quote-carousel.js"></script>
 <script src="/assets/js/hero-carousel.js"></script>
 <script src="/assets/js/router.js"></script>
 <script src="/assets/js/nav.js"></script>
 <script src="/assets/js/downloads.js"></script>
 <script src="/assets/js/tabs.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+  var SUPABASE_URL = 'https://anseecipbvxzcprmwknx.supabase.co';
+  var SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_Rz3c8tZvXKaUkysapjh8Yw_JaM-ZxXm';
+  var SUBMISSIONS_BUCKET = 'tender-submissions';
+  var supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+</script>
+<script src="/assets/js/submission.js"></script>
+<script src="/assets/js/admin.js"></script>
 </body>
 </html>

@@ -31,6 +31,7 @@ Loaded in order — later files override earlier ones, so keep the numbering.
 | `08-tenders.css` | tender tables, download menus, database CTA |
 | `09-contact.css` | map, contact columns, province tabs, office table |
 | `10-responsive.css` | all `@media` rules (≤900px, ≤480px) |
+| `11-admin.css` | admin login card + submissions dashboard table (`/admin`) |
 
 Mobile rules live only in `10-responsive.css`. When you add a component, put its
 desktop rules in the matching file and its mobile rules at the bottom.
@@ -50,6 +51,23 @@ call. Don't add `type="module"` or the inline handlers break.
 | `nav.js` | mobile nav toggle, mega-menu open/close |
 | `downloads.js` | tender download dropdowns (`toggleDlMenu`, `downloadAllFiles`) |
 | `tabs.js` | generic `.tab-btn` / `.tab-panel` handler (no markup uses it yet) |
+| `submission.js` | e-Portal Submissions page (`/tenders/submit`): populates the tender dropdown from the invitations table, drag-and-drop file picker, uploads to Supabase Storage |
+
+`submission.js` depends on a `supabaseClient` global set up in an inline `<script>` in
+`index.html` right before it (Supabase URL + **publishable** key — safe to expose
+client-side, security is enforced by RLS policies, not key secrecy). The `tender-submissions`
+bucket must exist with an anon-INSERT-only policy, and a `public.submissions` table must
+exist, for uploads/submit to work — see the bucket + table setup SQL kept with the project
+notes, not in this repo.
+
+| `admin.js` | `/admin` login (Supabase Auth) + submissions dashboard: lists `public.submissions`, status dropdown per row, signed-URL download links per file |
+
+`admin.js` uses `supabaseClient.auth.signInWithPassword` against a Supabase Auth user
+(`admin@sita-ct.co.za`) and only shows the dashboard if the signed-in email matches that
+address — but the *real* enforcement is server-side: the RLS policies on
+`public.submissions` and the `tender-submissions` storage bucket only grant SELECT to that
+exact email via `auth.jwt() ->> 'email'`, so the client-side check is just UX, not the
+security boundary.
 
 ## Adding a page
 
