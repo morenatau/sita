@@ -1,0 +1,153 @@
+/* Simple text content pages (About Us, Services, etc. mega-menu targets) */
+.info-page-section {
+  padding: 20px 20px 40px;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+.info-page-section h2 {
+  font-size: 20px;
+  color: #1a3a5c;
+  margin: 28px 0 10px;
+}
+.info-page-section h2:first-child {
+  margin-top: 0;
+}
+.info-page-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 0 10px;
+}
+.info-page-section ul,
+.info-page-section ol {
+  margin: 0 0 10px;
+  padding-left: 20px;
+}
+.info-page-section li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+.info-page-section .plain-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.info-page-section .plain-list li {
+  margin: 0 0 4px;
+}
+.info-page-section .value-prop-label {
+  font-weight: 700;
+  color: #4fa8de;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  margin: 0 0 6px;
+}
+.info-page-section .service-block {
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+}
+.info-page-section .service-block:first-of-type {
+  padding-top: 0;
+}
+.info-page-section .service-block:last-of-type {
+  border-bottom: none;
+}
+.info-page-section .service-block h2 {
+  margin-top: 0;
+}
+.info-page-section .contact-block p {
+  margin: 0 0 4px;
+}
+.info-page-section a {
+  color: #4fa8de;
+}
+
+/* Wrapping tab bar variant (many/long tab labels) — reuses tabs.js and the
+   .tab-btn / .tab-panel base rules from 09-contact.css, just laid out
+   content-width instead of stretched-equal-width across one line. */
+.data-tabs-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 20px;
+}
+.data-tabs-bar .tab-btn {
+  flex: 0 0 auto;
+  padding: 10px 18px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.data-tabs-bar .tab-btn.active {
+  margin-top: 0;
+  padding-top: 10px;
+  border-top: 3px solid #4fa8de;
+}
+
+/* Accordion (used inside the Provinces tab: one collapsible section per province) */
+.accordion-item {
+  border: 1px solid #eee;
+  border-bottom: none;
+}
+.accordion-item:last-child {
+  border-bottom: 1px solid #eee;
+}
+.accordion-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  color: #6fbf3f;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+}
+.accordion-toggle::after {
+  content: "\25BE";
+  color: #999;
+  transition: transform 0.2s ease;
+}
+.accordion-toggle.open {
+  border-left-color: #4fa8de;
+  background: #f9fbfd;
+}
+.accordion-toggle.open::after {
+  transform: rotate(180deg);
+}
+.accordion-panel {
+  display: none;
+  padding: 0 20px 20px;
+}
+.accordion-panel.open {
+  display: block;
+}
+
+/* Shareholder / leadership profile cards */
+.profile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 10px;
+}
+.profile-card {
+  width: 260px;
+}
+.profile-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #eee;
+}
+.profile-card h3 {
+  font-size: 18px;
+  color: #1a2c42;
+  margin: 16px 0 6px;
+}
+.profile-card p {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}

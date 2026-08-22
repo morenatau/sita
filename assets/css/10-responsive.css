@@ -54,7 +54,6 @@
 
     /* Hero carousel - shorter, retrofit to mobile screen width */
     .hero { height: 220px; margin: 10px; }
-    .hero-nav-arrow { width: 34px; height: 34px; font-size: 16px; }
     .dots-nav { bottom: 8px; }
 
     /* Icon row - stack 2 per row */
@@ -117,6 +116,7 @@
     /* Office table - allow horizontal scroll on small screens */
     .office-table { display: block; overflow-x: auto; white-space: nowrap; }
     .tender-page-section { padding: 15px 20px 40px; }
+    .info-page-section { padding: 15px 20px 40px; }
 
     /* Tender tables: stack into labeled cards instead of a cramped fixed-width table */
     .tender-table { table-layout: auto; }

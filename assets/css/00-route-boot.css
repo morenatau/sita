@@ -6,6 +6,14 @@
   html[data-route="contact"] #page-contact,
   html[data-route="invitations"] #page-invitations,
   html[data-route="submit"] #page-submit,
-  html[data-route="admin"] #page-admin {
+  html[data-route="admin"] #page-admin,
+  html[data-route="vision-mission-values"] #page-vision-mission-values,
+  html[data-route="sitas-legacy"] #page-sitas-legacy,
+  html[data-route="corporate-profile"] #page-corporate-profile,
+  html[data-route="mandate"] #page-mandate,
+  html[data-route="acts-legislation"] #page-acts-legislation,
+  html[data-route="commitment-to-customers"] #page-commitment-to-customers,
+  html[data-route="sitas-customers"] #page-sitas-customers,
+  html[data-route="shareholder"] #page-shareholder {
     display: block !important;
   }

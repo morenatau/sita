@@ -6,3 +6,12 @@
       document.getElementById(btn.dataset.tab).classList.add('active');
     });
   });
+
+  // Accordion: each .accordion-toggle independently shows/hides the
+  // .accordion-panel that follows it (unlike tabs, more than one can be open).
+  document.querySelectorAll('.accordion-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      toggle.nextElementSibling.classList.toggle('open');
+    });
+  });

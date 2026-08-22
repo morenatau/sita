@@ -3,6 +3,14 @@
     { "source": "/tenders/invitations", "destination": "/index.html" },
     { "source": "/tenders/submit", "destination": "/index.html" },
     { "source": "/admin", "destination": "/index.html" },
-    { "source": "/contact", "destination": "/index.html" }
+    { "source": "/contact", "destination": "/index.html" },
+    { "source": "/about/vision-mission-values", "destination": "/index.html" },
+    { "source": "/about/sitas-legacy", "destination": "/index.html" },
+    { "source": "/about/corporate-profile", "destination": "/index.html" },
+    { "source": "/about/mandate", "destination": "/index.html" },
+    { "source": "/about/acts-legislation", "destination": "/index.html" },
+    { "source": "/about/commitment-to-customers", "destination": "/index.html" },
+    { "source": "/about/sitas-customers", "destination": "/index.html" },
+    { "source": "/about/shareholder", "destination": "/index.html" }
   ]
 }
