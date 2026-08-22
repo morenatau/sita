@@ -1,10 +1,14 @@
 /* ===== BREADCRUMB HEADER ===== */
   .page-header {
+    padding: 30px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .page-header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
-    border-bottom: 1px solid #eee;
+    max-width: 1300px;
+    margin: 0 auto;
   }
   .page-header h1 { font-size: 40px; font-weight: 600; color: #1a2c42; margin: 0; }
   .breadcrumb { font-size: 16px; color: #555; }

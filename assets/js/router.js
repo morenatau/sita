@@ -3,7 +3,15 @@ var PAGE_PATHS = {
     'contact': '/contact',
     'invitations': '/tenders/invitations',
     'submit': '/tenders/submit',
-    'admin': '/admin'
+    'admin': '/admin',
+    'vision-mission-values': '/about/vision-mission-values',
+    'sitas-legacy': '/about/sitas-legacy',
+    'corporate-profile': '/about/corporate-profile',
+    'mandate': '/about/mandate',
+    'acts-legislation': '/about/acts-legislation',
+    'commitment-to-customers': '/about/commitment-to-customers',
+    'sitas-customers': '/about/sitas-customers',
+    'shareholder': '/about/shareholder'
   };
   var PATH_PAGES = {
     '': 'home',
@@ -11,7 +19,15 @@ var PAGE_PATHS = {
     '/contact': 'contact',
     '/tenders/invitations': 'invitations',
     '/tenders/submit': 'submit',
-    '/admin': 'admin'
+    '/admin': 'admin',
+    '/about/vision-mission-values': 'vision-mission-values',
+    '/about/sitas-legacy': 'sitas-legacy',
+    '/about/corporate-profile': 'corporate-profile',
+    '/about/mandate': 'mandate',
+    '/about/acts-legislation': 'acts-legislation',
+    '/about/commitment-to-customers': 'commitment-to-customers',
+    '/about/sitas-customers': 'sitas-customers',
+    '/about/shareholder': 'shareholder'
   };
 
   function normalizePath(p) {
