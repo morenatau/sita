@@ -11,6 +11,10 @@
     { "source": "/about/acts-legislation", "destination": "/index.html" },
     { "source": "/about/commitment-to-customers", "destination": "/index.html" },
     { "source": "/about/sitas-customers", "destination": "/index.html" },
-    { "source": "/about/shareholder", "destination": "/index.html" }
+    { "source": "/about/shareholder", "destination": "/index.html" },
+    { "source": "/about/governing-body", "destination": "/index.html" },
+    { "source": "/about/board-of-directors", "destination": "/index.html" },
+    { "source": "/about/executive-committee", "destination": "/index.html" },
+    { "source": "/about/provincial-management", "destination": "/index.html" }
   ]
 }

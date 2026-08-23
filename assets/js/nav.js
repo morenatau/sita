@@ -26,6 +26,29 @@
       if (window.innerWidth <= 900) closeMobileNav();
     });
   });
+  // Desktop: a mega-menu naturally opens flush with its own trigger's left edge,
+  // but for triggers near the right end of the nav bar that would push it off
+  // the edge of the viewport — nudge it left just enough to stay inside the
+  // nav bar (never past the trigger's own left edge, so it never runs off left either).
+  document.querySelectorAll('.nav-item').forEach(item => {
+    const menu = item.querySelector('.mega-menu');
+    if (!menu) return;
+    item.addEventListener('mouseenter', () => {
+      if (window.innerWidth <= 900) return;
+      menu.style.left = '0px';
+      requestAnimationFrame(() => {
+        const navRect = document.querySelector('.navbar-inner').getBoundingClientRect();
+        const itemRect = item.getBoundingClientRect();
+        const menuRect = menu.getBoundingClientRect();
+        let desiredLeft = Math.min(itemRect.left, navRect.right - menuRect.width);
+        desiredLeft = Math.max(desiredLeft, navRect.left);
+        menu.style.left = (desiredLeft - itemRect.left) + 'px';
+      });
+    });
+    item.addEventListener('mouseleave', () => {
+      menu.style.left = '';
+    });
+  });
   // Desktop: clicking a mega-menu submenu link closes that dropdown right away,
   // instead of it staying open just because the mouse is still hovering.
   document.querySelectorAll('.mega-menu a').forEach(link => {

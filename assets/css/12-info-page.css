@@ -149,5 +149,34 @@
 .profile-card p {
   font-size: 15px;
   color: #555;
-  margin: 0;
+  margin: 0 0 4px;
+}
+.profile-card .contact-person-label {
+  font-weight: 700;
+  color: #1a2c42;
+  margin-top: 10px;
+}
+
+/* Provincial contact tables (Provincial Management tab panels) */
+.pm-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+.pm-table th {
+  background: #f2f2f2;
+  color: #1a2c42;
+  text-align: left;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #ddd;
+}
+.pm-table td {
+  padding: 14px 20px;
+  color: #555;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  background: #ececec;
 }

@@ -129,7 +129,7 @@
   .submit-cta-banner-text p { font-size: 13px; margin: 0; color: #c7d3e0; }
   .submit-cta-banner-btn {
     display: inline-block;
-    background: #b3123f;
+    background: #4fa8de;
     color: #fff;
     font-size: 14px;
     font-weight: 700;
@@ -139,7 +139,7 @@
     white-space: nowrap;
     transition: background 0.2s ease;
   }
-  .submit-cta-banner-btn:hover { background: #8f0e33; color: #fff; }
+  .submit-cta-banner-btn:hover { background: #3d95cc; color: #fff; }
   @media (max-width: 600px) {
     .submit-cta-banner { flex-direction: column; align-items: flex-start; }
     .submit-cta-banner-btn { width: 100%; text-align: center; }
@@ -216,7 +216,7 @@
   .submit-dropzone-hint { margin: 0 0 20px; font-size: 12px; color: #8a929b; }
   .submit-dropzone-btn {
     display: inline-block;
-    background: #b3123f;
+    background: #4fa8de;
     color: #fff;
     font-weight: 700;
     font-size: 14px;
@@ -226,7 +226,7 @@
     cursor: pointer;
     transition: background 0.2s ease;
   }
-  .submit-dropzone-btn:hover { background: #8f0e33; }
+  .submit-dropzone-btn:hover { background: #3d95cc; }
   .submit-file-list { margin-top: 16px; text-align: left; }
   .submit-file-item {
     display: flex;

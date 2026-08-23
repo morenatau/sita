@@ -31,7 +31,7 @@
   .nav-links a:hover { background: #3d95cc; }
 
   /* ===== MEGA MENU (About Us / Services / Procurement) ===== */
-  .nav-item { display: flex; }
+  .nav-item { display: flex; position: relative; }
   .nav-item > a.dropdown-trigger { display: flex; align-items: center; }
   .mega-menu {
     display: none;
@@ -111,7 +111,7 @@
       padding-top: 50px;
       left: 0;
       width: max-content;
-      max-width: calc(100% - 20px);
+      max-width: min(calc(100vw - 40px), 1300px);
     }
     .nav-item:hover .mega-menu,
     .nav-item.open .mega-menu {

@@ -14,6 +14,10 @@
   html[data-route="acts-legislation"] #page-acts-legislation,
   html[data-route="commitment-to-customers"] #page-commitment-to-customers,
   html[data-route="sitas-customers"] #page-sitas-customers,
-  html[data-route="shareholder"] #page-shareholder {
+  html[data-route="shareholder"] #page-shareholder,
+  html[data-route="governing-body"] #page-governing-body,
+  html[data-route="board-of-directors"] #page-board-of-directors,
+  html[data-route="executive-committee"] #page-executive-committee,
+  html[data-route="provincial-management"] #page-provincial-management {
     display: block !important;
   }

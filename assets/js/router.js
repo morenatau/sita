@@ -11,7 +11,11 @@ var PAGE_PATHS = {
     'acts-legislation': '/about/acts-legislation',
     'commitment-to-customers': '/about/commitment-to-customers',
     'sitas-customers': '/about/sitas-customers',
-    'shareholder': '/about/shareholder'
+    'shareholder': '/about/shareholder',
+    'governing-body': '/about/governing-body',
+    'board-of-directors': '/about/board-of-directors',
+    'executive-committee': '/about/executive-committee',
+    'provincial-management': '/about/provincial-management'
   };
   var PATH_PAGES = {
     '': 'home',
@@ -27,7 +31,11 @@ var PAGE_PATHS = {
     '/about/acts-legislation': 'acts-legislation',
     '/about/commitment-to-customers': 'commitment-to-customers',
     '/about/sitas-customers': 'sitas-customers',
-    '/about/shareholder': 'shareholder'
+    '/about/shareholder': 'shareholder',
+    '/about/governing-body': 'governing-body',
+    '/about/board-of-directors': 'board-of-directors',
+    '/about/executive-committee': 'executive-committee',
+    '/about/provincial-management': 'provincial-management'
   };
 
   function normalizePath(p) {

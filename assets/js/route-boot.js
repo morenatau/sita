@@ -21,7 +21,11 @@
       '/about/acts-legislation': 'acts-legislation',
       '/about/commitment-to-customers': 'commitment-to-customers',
       '/about/sitas-customers': 'sitas-customers',
-      '/about/shareholder': 'shareholder'
+      '/about/shareholder': 'shareholder',
+      '/about/governing-body': 'governing-body',
+      '/about/board-of-directors': 'board-of-directors',
+      '/about/executive-committee': 'executive-committee',
+      '/about/provincial-management': 'provincial-management'
     };
     var route = PATH_PAGES[normalizePath(window.location.pathname)] || 'home';
     document.documentElement.setAttribute('data-route', route);
